@@ -323,36 +323,34 @@ body.active { overflow: hidden; }
   #HEADER
 \*-----------------------------------*/
 
-/* .navbar, */
-.header-btn-group .btn { display: none; }
-
 .header {
   --color: var(--white);
   --btn-color: var(--champagne-pink);
 
-  position: absolute;
+  position: fixed; /* Fixed navbar agar tidak turun */
   top: 0;
   left: 0;
   width: 100%;
   padding-block: 20px;
   border-block-end: 1px solid var(--champagne-pink_20);
   z-index: 4;
+  background-color: transparent; /* Transparan sebelum scroll */
+  transition: background-color 0.3s ease;
 }
 
 .header.active {
   --color: var(--rich-black-fogra-29);
   --btn-color: var(--rich-black-fogra-29);
 
+  background-color: var(--white); /* Navbar berubah menjadi putih saat scroll */
+  top: 0; /* Tetap berada di bagian atas */
+  box-shadow: var(--shadow-1); /* Berikan bayangan saat scroll */
   position: fixed;
-  top: -86px;
-  background-color: var(--white);
-  box-shadow: var(--shadow-1);
-  animation: slideIn 0.5s ease-out forwards;
 }
 
 @keyframes slideIn {
   0% { transform: translateY(0); }
-  100% { transform: translateY(100%); }
+  100% { transform: translateY(0); } /* Hapus gerakan ke bawah */
 }
 
 .header .container {
@@ -410,6 +408,7 @@ body.active { overflow: hidden; }
 
 .nav-toggle-btn.active .line.bottom { transform: translate(-1px, -3px) rotate(45deg); }
 
+/* Navbar dropdown menu */
 .navbar {
   position: absolute;
   top: 100%;
@@ -1437,10 +1436,10 @@ textarea.input-field {
    * HEADER
    */
 
-  /* .header-btn-group .btn {
+  .header-btn-group .btn {
     display: block;
     --bg-color: var(--dark-orange);
-  } */
+  }
  /**
    * HERO
    */
@@ -1558,36 +1557,7 @@ textarea.input-field {
    */
 
   .container { max-width: 720px; }
-  /**
-   * HEADER
-   */
 
-   .nav-toggle-btn { display: none; }
-
-   .header .container { gap: 20px; }
- 
-   .navbar,
-   .navbar.active {
-     all: unset;
-     margin-inline-start: auto;
-   }
- 
-   .navbar-list {
-     margin-block: 0;
-     display: flex;
-     gap: 5px;
-   }
- 
-   .nav-item:not(:last-child) { border-block-end: none; }
- 
-   .navbar-link {
-     --fs-4: 1.5rem;
-     color: var(--btn-color);
-     letter-spacing: -0.5px;
-   }
-   .navbar-logo{
-    width: 100px;
-   }
 
 
   /**
@@ -1703,6 +1673,22 @@ textarea.input-field {
   /**
    * ABOUT
    */
+
+  /* .about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .about { text-align: left; }
+
+  .about .section-title { margin-block-start: 0; }
+
+  .about :is(.section-title, .btn) { margin-inline: 0; }
+
+  .about-item { justify-content: flex-start; } */
+
+
 
   /**
    * FOOD MENU
@@ -1880,7 +1866,6 @@ textarea.input-field {
 
   .hero-img-bg { transform: scale(1.4) translate(20px, -20px); }
 
-
   .about .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2009,7 +1994,6 @@ textarea.input-field {
    */
 
   .about .container { gap: 60px; }
-  
 
 
 
