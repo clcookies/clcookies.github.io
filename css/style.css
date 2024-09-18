@@ -1270,14 +1270,14 @@ ul.social-list li a:hover {
   border-block-end: 2px solid var(--independence_30);
 }
 
-.footer-top::after {
+/* .footer-top::after {
   content: url(../images/delivery-boy.svg);
   position: absolute;
   bottom: -11px;
   left: -160px;
   width: 160px;
   animation: running-cycle 20s linear infinite;
-}
+} */
 
 @keyframes running-cycle {
   0% { left: -160px; }
