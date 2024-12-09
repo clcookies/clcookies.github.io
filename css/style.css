@@ -987,6 +987,13 @@ ul.social-list li a:hover {
   #DELIVERY
 \*-----------------------------------*/
 
+.delivery .delivery-content .section-text {
+  font-size: 20px; /* Perbesar ukuran font */
+  line-height: 1.8; /* Tingkatkan jarak antar baris */
+  color: #333; /* Warna teks netral untuk keterbacaan */
+  margin-bottom: 20px; /* Beri jarak di bawah narasi */
+}
+
 .delivery-content { margin-block-end: 40px; }
 
 .delivery .section-title {
