@@ -703,149 +703,174 @@
       <!-- 
         - #CTA
       -->
-      <section class="section section-divider white cta" style="background-image: url('./assets/images/hero-bg.jpg')">
+      <section class="section section-divider white cta" style="background-image: url('./assets/images/hero-bg.jpg')"> 
         <div class="container">
-      
           <div class="cta-content">
+            <center>
+              <h2 class="h2 section-title"  data-aos="fade-up" data-aos-duration="1000">
+                Reseller 
+                <span class="span"> Are Wellcome!</span>
+              </h2>
+            </center>
       
-            <h2 class="h2 section-title" data-aos="fade-right" data-aos-duration="1000">
-              Reseller 
-              <span class="span"> Are Wellcome!</span>
-            </h2>
-      
-            <p class="section-text" data-aos="fade-right" data-aos-duration="1000">
-              Yuk gabung menjadi Reseller CL Cookies, <br>Nikmati Promo Spesial, 
-              harga Khusus dan <br>dapatkan keuntungan dan Cashback hingga <br> 1jt rupiah.
+            <p class="section-text"  data-aos="fade-up" data-aos-duration="1000">
+              Yuk gabung menjadi Reseller CL Cookies! Nikmati Promo Spesial, harga Khusus, 
+              dan dapatkan keuntungan serta Cashback hingga 1jt rupiah.
             </p>
       
-            <!-- Tambahan judul "Fasilitas" sebelum poin -->
-            <h3 class="facility-title">Fasilitas : </h3>
+            <div class="fasilitas-title">
+              <h3 class="fasilitas-text"  data-aos="fade-up" data-aos-duration="1000">Fasilitas yang Anda Dapatkan:</h3>
+            </div>
       
-            <ul class="reseller-list" data-aos="fade-right" data-aos-duration="1000">
-              <li class="icon-tester">Free Tester Kue</li>
-              <li class="icon-photo">Konten Foto dan Video</li>
-              <li class="icon-catalog">Katalog</li>
-              <li class="icon-delivery">Packing & Pengiriman dari Tim CL</li>
-            </ul>
+            <div class="icon-grid"  data-aos="fade-up" data-aos-duration="1000">
+              <div class="icon-box">
+                <div class="icon">🍪</div>
+                <p>Free Tester Kue</p>
+              </div>
+              <div class="icon-box">
+                <div class="icon">📸</div>
+                <p>Konten Foto dan Video</p>
+              </div>
+              <div class="icon-box">
+                <div class="icon">📖</div>
+                <p>Katalog</p>
+              </div>
+              <div class="icon-box">
+                <div class="icon">🚚</div>
+                <p>Packing & Pengiriman dari Tim CL</p>
+              </div>
+            </div>
       
-            <p class="section-text for-more-info" data-aos="fade-up" data-aos-duration="1000">
-              For More Info : 
-              <a href="https://wa.me/6281931316558" target="_blank" class="info-link">0819-3131-6558</a>
-            </p>
-            <button class="btn btn-hover" data-aos="fade-up" id="whatsappBtn">Hubungi Sekarang</button>
+            <center>
+              <p class="section-text for-more-info"  data-aos="fade-up" data-aos-duration="1000">
+                For More Info : 
+                <a href="https://wa.me/6281931316558" target="_blank" class="info-link">0819-3131-6558</a>
+              </p>
+              <button class="btn btn-hover" id="whatsappBtn"  data-aos="fade-up" data-aos-duration="1000">Hubungi Sekarang</button>
+            </center>
           </div>
-      
-          <figure class="cta-banner">
-            <img src="./assets/images/berbagi.png"  width="700" height="637" loading="lazy" alt="Gambar Banner" class="w-100 cta-img">
-            <img src="./assets/images/gabung1.png"  width="216" height="226" loading="lazy" alt="Gambar Gabung" class="abs-img scale-up-anim">
-          </figure>
-      
         </div>
       </section>
       
       <style>
-      .cta {
-        padding: 50px 20px;
-        background-image: url('./assets/images/hero-bg.jpg');
-        background-size: cover;
-        background-position: center;
-        color: white;
-      }
+        /* Style Bagian Section */
+        .cta {
+          padding: 50px 20px;
+          background-image: url('./assets/images/hero-bg.jpg');
+          background-size: cover;
+          background-position: center;
+          color: white;
+        }
       
-      .cta .container {
-        display: flex; 
-        justify-content: space-between;  
-        align-items: flex-start; 
-        flex-wrap: wrap;
-      }
+        /* Layout Container */
+        .cta .container {
+          display: flex; 
+          justify-content: center;  
+          align-items: flex-start; 
+          flex-direction: column;
+        }
       
-      .cta .cta-content {
-        text-align: left;
-      } 
+        /* Judul Section */
+        .cta .section-title {
+          font-size: 3.5rem;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
       
-      .cta .section-title {
-        font-size: 3.5rem;
-        font-weight: bold;
-        margin-bottom: 20px;
-      }
+        /* Teks Paragraf */
+        .cta .section-text {
+          font-size: 1.75rem;
+          line-height: 1.6;
+          margin-bottom: 20px;
+          color: white;
+        }
       
-      .cta .section-text {
-        font-size: 1.75rem;
-        line-height: 1.6;
-        margin-bottom: 20px;
-        color: white;
-      }
+        /* Fasilitas Title */
+        .fasilitas-title {
+          margin-top: 30px;
+          text-align: center;
+        }
       
-      .facility-title {
-        font-size: 1.75rem; 
-        font-weight: bold; 
-        margin-bottom: 15px; 
-        color: white; 
-        text-align: left;
-      }
+        .fasilitas-text {
+          font-size: 2.25rem;
+          font-weight: bold;
+          color: #FFFFff;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
       
-      .reseller-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-      }
+        /* Grid Layout */
+        .icon-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 20px;
+          margin-top: 30px;
+        }
       
-      .reseller-list li {
-        font-size: 1.5rem;
-        margin-bottom: 5px; /* Mengurangi jarak antar item */
-        display: flex;
-        align-items: center;
-        color: white;
-      }
+        /* Icon Box dengan Efek 3D */
+        .icon-box {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          background: linear-gradient(145deg, #FFF8DC, #F5E8B4);
+          box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2), -6px -6px 12px rgba(255, 255, 255, 0.5);
+          border-radius: 12px;
+          padding: 15px;
+          transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
       
-      .reseller-list li:last-child {
-        margin-bottom: 0; /* Menghapus jarak bawah pada item terakhir */
-      }
+        .icon-box:hover {
+          box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3), -8px -8px 16px rgba(255, 255, 255, 0.6);
+          transform: translateY(-5px);
+        }
       
-      .reseller-list .icon-tester::before {
-        content: '🍪'; /* Emoji kue */
-        font-size: 2.5rem;
-        margin-right: 10px;
-      }
+        /* Ikon dengan Efek Timbul */
+        .icon {
+          font-size: 2.5rem;
+          background: linear-gradient(145deg, #ff9100, #ffa807);
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.5);
+          color: #FF4500;
+          padding: 15px;
+          border-radius: 50%;
+          margin-right: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: transform 0.3s ease-in-out;
+        }
       
-      .reseller-list .icon-photo::before {
-        content: '📸'; /* Emoji kamera */
-        font-size: 2.5rem;
-        margin-right: 10px;
-      }
+        .icon:hover {
+          transform: translateY(-5px) scale(1.1);
+        }
       
-      .reseller-list .icon-catalog::before {
-        content: '📖'; /* Emoji buku (katalog) */
-        font-size: 2.5rem;
-        margin-right: 10px;
-      }
+        /* Teks di Icon Box */
+        .icon-box p {
+          font-size: 1.5rem;
+          font-weight: bold;
+          background: linear-gradient(145deg, #FF7F50, #FF6347);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
       
-      .reseller-list .icon-delivery::before {
-        content: '🚚'; /* Emoji truk pengiriman */
-        font-size: 2.5rem;
-        margin-right: 10px;
-      }
+        /* Link Info */
+        .info-link {
+          color: #ff9900;
+          font-weight: bold;
+          text-decoration: none;
+        }
       
-      .cta .info-link {
-        color: #FFD700;
-        font-weight: bold;
-        text-decoration: none;
-      }
-      
-      .cta .info-link:hover {
-        text-decoration: underline;
-      }
+        .info-link:hover {
+          text-decoration: underline;
+        }
       </style>
-      
       
       <script>
         document.getElementById('whatsappBtn').addEventListener('click', function() {
           window.location.href = 'https://api.whatsapp.com/send?phone=6281931316558&text=Halo%20Mimin,%20Saya%20tertarik%20untuk%20bergabung%20sebagai%20reseller.';
         });
       </script>
+      
+      
       
       <!--- #DELIVERY-->
       <!-- <section class="section section-divider gray delivery">
