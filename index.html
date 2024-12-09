@@ -33,7 +33,7 @@
   <!-- - #HEADER-->
   <header class="header" data-header>
     <div class="container">
-      <a href="#" class="logo"><img src="./assets/images/logocl.png" width="250" height="200" alt="logo">
+      <a href="#" class="logo"><img src="./assets/images/logocl.png" width="200" height="150" alt="logo">
        <!-- <h1>CL COOKIES<span class="span">.</span></a></h1> -->
 
       <nav class="navbar" data-navbar>
@@ -139,7 +139,7 @@
       <section class="section section-divider gray delivery" id="about">
         <div class="container">
           <figure class="delivery-banner">
-            <img src="./assets/images/about cl.jpeg" data-aos="fade-right" data-aos-duration="1000" width="700" height="602" loading="lazy" alt="CL Cookies" class="w-100">
+            <img src="./assets/images/about cl.jpeg" data-aos="fade-right" data-aos-duration="1000" width="700" height="602" loading="lazy" alt="CL Cookies" class="w-100 image-3d">
           </figure>
           <div class="delivery-content">
             <h2 class="h2 section-title" data-aos="fade-up" data-aos-duration="1000">
@@ -165,42 +165,73 @@
                 <h1 data-aos="zoom-in" data-aos-duration="1000">2017</h1>
               </div>
             </div>
-      
-            <style>
-              /* Narasi About */
-              .delivery .delivery-content .section-text {
-                font-size: 16px; /* Ukuran font lebih besar */
-                line-height: 1.8; /* Jarak antar baris */
-                color: #333; /* Warna netral */
-                margin-bottom: 20px; /* Jarak bawah narasi */
-              }
-      
-              /* Flexbox untuk angka */
-              .delivery .delivery-content .info {
-                display: flex;
-                justify-content: space-between;
-                padding-top: 10px; /* Jarak dari narasi ke angka */
-                gap: 30px; /* Jarak antar angka */
-              }
-      
-              .delivery .delivery-content .info .box {
-                text-align: center;
-                flex: 1;
-              }
-      
-              .delivery .delivery-content .info .box h1 {
-                font-size: 35px;
-                color: var(--secondary-color, #ff9900); /* Warna orange */
-              }
-      
-              .delivery .delivery-content .info .box h3 {
-                color: var(--text-color, #333);
-                margin-bottom: 5px;
-              }
-            </style>
           </div>
         </div>
       </section>
+      
+      <style>
+        /* Narasi About */
+        .delivery .delivery-content .section-text {
+          font-size: 16px; /* Ukuran font lebih besar */
+          line-height: 1.8; /* Jarak antar baris */
+          color: #333; /* Warna netral */
+          margin-bottom: 20px; /* Jarak bawah narasi */
+        }
+      
+        /* Flexbox untuk angka */
+        .delivery .delivery-content .info {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 10px; /* Jarak dari narasi ke angka */
+          gap: 30px; /* Jarak antar angka */
+        }
+      
+        .delivery .delivery-content .info .box {
+          text-align: center;
+          flex: 1;
+        }
+      
+        .delivery .delivery-content .info .box h1 {
+          font-size: 35px;
+          color: var(--secondary-color, #ff9900); /* Warna orange */
+        }
+      
+        .delivery .delivery-content .info .box h3 {
+          color: var(--text-color, #333);
+          margin-bottom: 5px;
+        }
+      
+        /* Efek 3D pada Gambar */
+        .container {
+          perspective: 1500px; /* Menambahkan perspektif untuk efek 3D */
+        }
+      
+        .image-3d {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          cursor: pointer;
+          transform-style: preserve-3d; /* Menjaga efek 3D */
+        }
+      
+        /* Efek 3D saat di-hover */
+        .image-3d:hover {
+          transform: rotateY(15deg) rotateX(10deg) scale(1.05); /* Efek rotasi 3D */
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Bayangan untuk kedalaman */
+        }
+      
+        /* Efek saat ditekan (Gambar sedikit membesar) */
+        .image-3d:active {
+          transform: rotateY(0deg) rotateX(0deg) scale(1.1); /* Gambar sedikit membesar */
+        }
+      </style>
+      
+      <script>
+        // Menambahkan interaksi klik pada gambar
+        document.querySelector('.image-3d').addEventListener('click', function() {
+          // Misalnya, gambar mengarahkan ke halaman lain (ubah URL sesuai kebutuhan)
+          window.location.href = "#"; // Link dapat diubah ke halaman lain sesuai kebutuhan
+        });
+      </script>
+      
       
       <!--- #FOOD MENU-->
       <section class="section food-menu" id="food-menu">
